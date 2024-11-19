@@ -1,0 +1,147 @@
+/* Estilos básicos */
+body {
+                         font-family: Arial, sans-serif;
+                         margin: 0;
+                         padding: 0;
+                         background-color: #f4f4f4;
+                         background-image: url('images/restaurante2.jpg'); /* Imagen de fondo */
+                         background-size: cover; /* Asegura que la imagen cubra todo el fondo */
+                         background-position: center;
+                         background-attachment: fixed; /* Fija el fondo cuando se hace scroll */
+                     }
+                     
+                     .menu {
+                         display: flex;
+                         flex-wrap: nowrap;
+                         justify-content: start;
+                         overflow-x: auto; /* Permite el deslizamiento horizontal */
+                         margin-top: 20px;
+                         padding: 10px;
+                     }
+                     
+                     .menu-item {
+                         background-color: #fff;
+                         border-radius: 10px;
+                         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+                         margin: 10px;
+                         padding: 20px;
+                         width: 250px; /* Ancho fijo para que todos los platillos tengan el mismo tamaño */
+                         text-align: center;
+                         transition: transform 0.3s ease;
+                         flex-shrink: 0; /* Asegura que los items no se encojan */
+                     }
+                     
+                     /* Imágenes de los platillos */
+                     .menu-item-img {
+                         width: 100%;
+                         border-radius: 8px;
+                     }
+                     
+                     /* Títulos y descripciones */
+                     h3 {
+                         font-size: 1.5em;
+                         margin: 10px 0;
+                     }
+                     
+                     p {
+                         color: #555;
+                     }
+                     
+                     /* Botones ocultos inicialmente */
+                     .menu-item-buttons {
+                         max-height: 0;
+                         overflow: hidden;
+                         transition: max-height 0.5s ease-out;
+                     }
+                     
+                     /* Cuando el platillo tiene la clase active, los botones se expanden */
+                     .menu-item.active .menu-item-buttons {
+                         max-height: 200px;
+                     }
+                     
+                     /* Estilos de los botones */
+                     .menu-item .btn {
+                         background-color: #ff5722;
+                         color: white;
+                         padding: 10px 20px;
+                         text-decoration: none;
+                         border-radius: 5px;
+                         margin-top: 10px;
+                         display: block;
+                         text-align: center;
+                     }
+                     
+                     .menu-item .btn:hover {
+                         background-color: #e64a19;
+                     }
+                     
+                     button {
+                         background-color: #4CAF50;
+                         color: white;
+                         padding: 10px 20px;
+                         border: none;
+                         border-radius: 5px;
+                         cursor: pointer;
+                         margin-top: 15px;
+                     }
+                     
+                     button:hover {
+                         background-color: #45a049;
+                     }
+                     
+                     /* Agregar una sombra y un pequeño zoom en hover */
+                     .menu-item:hover {
+                         transform: scale(1.05);
+                     }
+                     
+                     /* Agregar espacio entre los elementos */
+                     .menu-item-buttons a {
+                         display: block;
+                         margin: 5px 0;
+                     }
+                     
+                     /* Estilos para el contenedor de los botones de navegación */
+                     .navigation {
+                         display: flex;
+                         justify-content: center;
+                         margin-top: 20px;
+                     }
+                     
+                     .nav-button {
+                         background-color: #007BFF;
+                         color: white;
+                         padding: 10px 15px;
+                         border: none;
+                         border-radius: 5px;
+                         cursor: pointer;
+                         margin: 0 5px;
+                     }
+                     
+                     .nav-button:hover {
+                         background-color: #0056b3;
+                     }
+                     
+                     .nav-button:disabled {
+                         background-color: #cccccc;
+                         cursor: not-allowed;
+                     }
+                     
+                     /* Estilo para el botón de volver al inicio */
+.back-to-home {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.btn-back {
+    padding: 10px 20px;
+    background-color: #06ff7e;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.btn-back:hover {
+    background-color: #35ff11;
+}

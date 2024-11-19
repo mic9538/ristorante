@@ -1,0 +1,96 @@
+/* Estilos generales */
+body, html {
+                         margin: 0;
+                         padding: 0;
+                         font-family: 'Arial', sans-serif;
+                         color: #fff;
+                         height: 100%;
+                         overflow: hidden;
+                     }
+                     
+                     /* Fondo de imagen que cubre toda la pantalla */
+                     .background-image {
+                         background: url('images/restaurante.png') no-repeat center center fixed;
+                         background-size: cover;
+                         height: 100vh;
+                         display: flex;
+                         flex-direction: column;
+                         justify-content: space-between;
+                         align-items: center;
+                         text-align: center;
+                     }
+                     
+                     /* Estilos del header y navegación */
+                     header {
+                         width: 100%;
+                         padding: 20px;
+                     }
+                     
+                     nav ul {
+                         list-style: none;
+                         padding: 0;
+                         margin: 0;
+                         display: flex;
+                         gap: 20px;
+                         justify-content: center;
+                     }
+                     
+                     nav ul li a {
+                         text-decoration: none;
+                         color: #fff;
+                         background-color: rgba(0, 0, 0, 0.5);
+                         padding: 10px 15px;
+                         border-radius: 5px;
+                         transition: background 0.3s ease;
+                     }
+                     
+                     nav ul li a:hover {
+                         background-color: #f39c12;
+                     }
+                     
+                     /* Estilos del contenido principal */
+                     main {
+                         flex-grow: 1;
+                         display: flex;
+                         justify-content: center;
+                         align-items: center;
+                     }
+                     
+                     .intro {
+                         background-color: rgba(0, 0, 0, 0.6);
+                         padding: 40px;
+                         border-radius: 10px;
+                     }
+                     
+                     .intro h2 {
+                         margin-bottom: 20px;
+                         font-size: 2.5em;
+                     }
+                     
+                     .intro p {
+                         margin-bottom: 30px;
+                     }
+                     
+                     .btn {
+                         display: inline-block;
+                         padding: 15px 30px;
+                         background-color: #e67e22;
+                         color: #fff;
+                         text-decoration: none;
+                         border-radius: 5px;
+                         font-weight: bold;
+                         transition: background-color 0.3s ease;
+                     }
+                     
+                     .btn:hover {
+                         background-color: #d35400;
+                     }
+                     
+                     /* Estilos del footer */
+                     footer {
+                         background-color: rgba(0, 0, 0, 0.7);
+                         padding: 10px;
+                         width: 100%;
+                         text-align: center;
+                     }
+                     
